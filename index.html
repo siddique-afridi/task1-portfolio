@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Site </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="navbar">
+        <nav class="nav-container">
+            <div class="nav-brand">
+                <h1>SA</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#hobbies" class="nav-link">Hobbies</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="theme-switcher">
+                <button id="lightMode" class="theme-btn light-btn"> Light</button>
+                <button id="darkMode" class="theme-btn dark-btn"> Dark</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="profile-image">
+                <img src="/images/profile1.png" alt="profile picture">
+            </div>
+            <h1 class="hero-title">Sadeeq Ali Khan</h1>
+            <p class="hero-subtitle">Frontend Developer</p>
+            <button class="cta-button" onclick="scrollToSection('about')">Discover My Story</button>
+        </div>
+        <div class="hero-background"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm Sadeeq Ali Khan, a passionate frontend developer with over 6 months of experience creating beautiful, functional web applications. I love turning complex problems into simple, elegant solutions that users enjoy interacting with.</p>
+                    <p>I believe in continuous learning and staying curious about the ever-evolving tech landscape.</p>
+                    <div class="skills">
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">Javascript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Tailwindcss</span>
+                        <span class="skill-tag">Git/Github</span>
+                        <span class="skill-tag">API integration</span>
+                    </div>
+                </div>
+                <div class="about-card">
+                    <h3>Quick Facts</h3>
+                    <div class="fact-item">
+                        <span class="fact-label">Location</span>
+                        <span class="fact-value">Islamabad, Pakistan</span>
+                    </div>
+                    <div class="fact-item">
+                        <span class="fact-label">Experience</span>
+                        <span class="fact-value">6 months</span>
+                    </div>
+                    <div class="fact-item">
+                        <span class="fact-label">Goal</span>
+                        <span class="fact-value">Full-Stack Development</span>
+                    </div>
+                    <div class="fact-item">
+                        <span class="fact-label">Availability</span>
+                        <span class="fact-value available">Open to opportunities</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="section hobbies-section">
+        <div class="container">
+            <h2 class="section-title">My Hobbies</h2>
+            <div class="hobbies-grid">
+                <div class="hobby-card">
+                    <div class="hobby-icon">💻</div>
+                    <h3>Coding</h3>
+                    <p>Building amazing web applications and exploring new technologies</p>
+                </div>
+                <div class="hobby-card">
+                    <div class="hobby-icon">🎨</div>
+                    <h3>Design</h3>
+                    <p>Creating beautiful user experiences and intuitive interfaces</p>
+                </div>
+                <div class="hobby-card">
+                    <div class="hobby-icon">🌏</div>
+                    <h3>Travelling</h3>
+                    <p>Discovering places, cultures, and unforgettable moments</p>
+                </div>
+                <div class="hobby-card">
+                    <div class="hobby-icon">🎵</div>
+                    <h3>Music</h3>
+                    <p>Playing guitar and discovering new sounds across different genres</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image"></div>
+                    <div class="project-content">
+                        <h3>Faulty Calculator</h3>
+                        <p>A fun project, faulty value after few attempts using <code>math.random </code>and if/else statements.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Javascript</span>
+                        </div>
+                        <a href="https://github.com/siddique-afridi/Faulty-calculator" class="project-link">View Project →</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image"></div>
+                    <div class="project-content">
+                        <h3>Techfix Landing Page</h3>
+                        <p>Build responsive landing page for laptop and mobile repairing shop.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Javascript</span>
+                        </div>
+                        <a href="https://github.com/siddique-afridi/Techfix-Landing-page" class="project-link">View Project →</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image"></div>
+                    <div class="project-content">
+                        <h3>Book Manager</h3>
+                        <p>A simple book manager fetching searched books from googleapis in real time and stores in database. </p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Javascript</span>
+                            <span>Node.js</span>
+                            <span>Express.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <a href="https://github.com/siddique-afridi/book-manager" class="project-link">View Project →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <p class="contact-description">
+                I'm always excited to discuss new opportunities, collaborate on interesting projects, 
+                or just chat about technology and design.
+            </p>
+            <div class="contact-links">
+                <a href="https://linkedin.com/in/siddique-afridi" target="_blank" class="contact-link linkedin">
+                    <span class="contact-icon">💼</span>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/siddique-afridi" target="_blank" class="contact-link github">
+                    <span class="contact-icon">🐙</span>
+                    <span>GitHub</span>
+                </a>
+                <a href="mailto:sadeeqalikhan2@gmail.com" class="contact-link email">
+                    <span class="contact-icon">📧</span>
+                    <span>Email</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Sadeeq Ali Khan. Crafted with modern web technologies.</p>
+        </div>
+    </footer>
+
+    <script src="/javascript/script.js"></script>
+</body>
+</html>
